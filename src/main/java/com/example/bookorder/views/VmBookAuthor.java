@@ -14,23 +14,14 @@ import org.hibernate.annotations.Immutable;
 @Table(name = "vm_book_author", schema = "public")
 public class VmBookAuthor {
 
-	private int no;
 	private long bookId;
 	private String title;
-	private String authorFirstName;
-	private String authorLastName;
+	private String fName;
+	private String lName;
 	private String rating;
 	private BigDecimal price;
 	
 	@Id
-	@Column(name = "no", unique = true, nullable = false)
-	public int getNo() {
-		return no;
-	}
-	public void setNo(int no) {
-		this.no = no;
-	}
-	
 	@Column(name = "book_id")
 	public long getBookId() {
 		return bookId;
@@ -47,20 +38,20 @@ public class VmBookAuthor {
 		this.title = title;
 	}
 	
-	@Column(name = "author_f_name")
-	public String getAuthorFirstName() {
-		return authorFirstName;
+	@Column(name = "f_name")
+	public String getfName() {
+		return fName;
 	}
-	public void setAuthorFirstName(String authorFirstName) {
-		this.authorFirstName = authorFirstName;
+	public void setfName(String fName) {
+		this.fName = fName;
 	}
 	
-	@Column(name = "author_l_name")
-	public String getAuthorLastName() {
-		return authorLastName;
+	@Column(name = "l_name")
+	public String getlName() {
+		return lName;
 	}
-	public void setAuthorLastName(String authorLastName) {
-		this.authorLastName = authorLastName;
+	public void setlName(String lName) {
+		this.lName = lName;
 	}
 	
 	@Column(name = "rating")

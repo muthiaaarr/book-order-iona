@@ -4,20 +4,13 @@ import java.math.BigDecimal;
 
 public class VmBookAuthorDTO {
 
-	private int no;
 	private long bookId;
 	private String title;
-	private String authorFirstName;
-	private String authorLastName;
+	private String fName;
+	private String lName;
 	private String rating;
 	private BigDecimal price;
 	
-	public int getNo() {
-		return no;
-	}
-	public void setNo(int no) {
-		this.no = no;
-	}
 	public long getBookId() {
 		return bookId;
 	}
@@ -30,17 +23,17 @@ public class VmBookAuthorDTO {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getAuthorFirstName() {
-		return authorFirstName;
+	public String getfName() {
+		return fName;
 	}
-	public void setAuthorFirstName(String authorFirstName) {
-		this.authorFirstName = authorFirstName;
+	public void setfName(String fName) {
+		this.fName = fName;
 	}
-	public String getAuthorLastName() {
-		return authorLastName;
+	public String getlName() {
+		return lName;
 	}
-	public void setAuthorLastName(String authorLastName) {
-		this.authorLastName = authorLastName;
+	public void setlName(String lName) {
+		this.lName = lName;
 	}
 	public String getRating() {
 		return rating;
