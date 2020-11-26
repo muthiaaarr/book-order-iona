@@ -1,22 +1,29 @@
 package com.example.bookorder.models.dtos;
 
+import java.math.BigDecimal;
+
 public class PublisherDto {
 
 	private Long publisherId;
 	private String companyName;
 	private String country;
-	private PaperDto paper;
+	private Long paperId;
+	private String qualityName;
+	private BigDecimal paperPrice;
 	
 	public PublisherDto() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public PublisherDto(Long publisherId, String companyName, String country, PaperDto paper) {
+	public PublisherDto(Long publisherId, String companyName, String country, Long paperId, String qualityName,
+			BigDecimal paperPrice) {
 		super();
 		this.publisherId = publisherId;
 		this.companyName = companyName;
 		this.country = country;
-		this.paper = paper;
+		this.paperId = paperId;
+		this.qualityName = qualityName;
+		this.paperPrice = paperPrice;
 	}
 
 	public Long getPublisherId() {
@@ -43,13 +50,31 @@ public class PublisherDto {
 		this.country = country;
 	}
 
-	public PaperDto getPaper() {
-		return paper;
+	public Long getPaperId() {
+		return paperId;
 	}
 
-	public void setPaper(PaperDto paper) {
-		this.paper = paper;
+	public void setPaperId(Long paperId) {
+		this.paperId = paperId;
 	}
+
+	public String getQualityName() {
+		return qualityName;
+	}
+
+	public void setQualityName(String qualityName) {
+		this.qualityName = qualityName;
+	}
+
+	public BigDecimal getPaperPrice() {
+		return paperPrice;
+	}
+
+	public void setPaperPrice(BigDecimal paperPrice) {
+		this.paperPrice = paperPrice;
+	}
+
+	
 	
 	
 }
